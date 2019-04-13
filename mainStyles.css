@@ -1,0 +1,81 @@
+html{
+    min-width: 1280px;
+    max-width: 1280px;
+    min-height: 720px;
+    overflow: hidden ;
+    overflow-y:scroll;
+    font-family: 'Poppins', sans-serif;
+    color: #38003C;
+}
+
+h1,h2{
+    text-align: center;
+    width:100vw;
+}
+
+#message{
+    font-size:0.75em;
+}
+#messageTwo{
+    font-size:0.75em;
+}
+.svgContainer {
+    /*display: inline-block;*/
+    /*position: relative;*/
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+#zoom{
+    transition:opacity 1s linear;
+}
+
+#myChart{
+    position:absolute;
+    left:26.5vw;
+    top:40vh;
+    opacity: 0;
+    /*height: 475px !important;*/
+    height:auto !important;
+    width: 47vw !important;
+}
+#vis {
+    position:absolute;
+    background: #FFFFFF;
+    display: inline-block;
+    width:100%;
+    overflow: visible;
+    top:40%;
+    left:16%;
+    /*width: 100%;*/
+    /*!*height: 300%;*!*/
+    /*min-width: 800px;*/
+    /*min-height: 500px;*/
+    /*box-sizing: border-box;*/
+    /*margin: auto;*/
+}
+
+@keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.title{
+    animation: 3s ease-out 0s 1 opacityChange;
+}
+#secondTitle{
+    position: absolute;
+    top: 8vh;
+}
